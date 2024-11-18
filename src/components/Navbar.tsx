@@ -21,7 +21,7 @@ const NavBar: React.FC = () => {
         {/* Navbar Brand with Logo and Heading */}
         <Navbar.Brand href="/" className="d-flex align-items-center">
           {/* Logo Image */}
-          <Image src="/FullLogo.jpg" alt="Manoa Bites" style={{ height: '60px', borderRadius: '50%' }} />
+          <Image src="/FullLogo.png" alt="Manoa Bites" style={{ height: '60px', borderRadius: '50%' }} />
           {/* Heading Text */}
           <span style={{ fontSize: '24px', marginLeft: '10px' }}>Manoa Bites</span>
         </Navbar.Brand>
