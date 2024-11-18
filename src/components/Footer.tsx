@@ -36,7 +36,7 @@ const Footer = () => (
             <span className="me-3">Register for free</span>
           </Col>
           <Col xs="auto">
-            <Button variant="dark" className="rounded-pill" href="/signup">
+            <Button variant="dark" className="rounded-pill" href="\auth\signin">
               Sign up!
             </Button>
           </Col>
