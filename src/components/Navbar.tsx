@@ -13,10 +13,17 @@ const NavBar: React.FC = () => {
   const userWithRole = session?.user as { email: string; randomKey: string };
   const role = userWithRole?.randomKey;
   const pathName = usePathname();
+
   return (
     <Navbar bg="light" expand="lg">
       <Container>
-        <Navbar.Brand href="/">Next.js Application Template</Navbar.Brand>
+        {/* Navbar Brand with Logo and Heading */}
+        <Navbar.Brand href="/" className="d-flex align-items-center">
+          {/* Logo Image */}
+          <img src="/Manoabiteslogo2.png" alt="Manoa Bites" style={{ height: '40px' }} />
+          {/* Heading Text */}
+          <span style={{ fontSize: '24px', marginLeft: '10px' }}>Manoa Bites</span>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto justify-content-start">
