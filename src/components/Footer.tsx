@@ -18,7 +18,7 @@ const Footer = () => (
           <h3>Links:</h3>
           <ul className="list-unstyled">
             <li><a href="foo" className="text-white">FAQ</a></li>
-            <li><a href="/issuesform" className="text-white">Report a Problem</a></li>
+            <li><a href="/issueform" className="text-white">Report a Problem</a></li>
             <li>
               <a href="https://github.com/manoa-bites/manoa-bites" className="text-white">
                 Link to our GitHub repo
