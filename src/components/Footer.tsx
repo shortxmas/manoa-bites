@@ -1,7 +1,7 @@
 import { Button, Col, Container, Row } from 'react-bootstrap';
 
 const Footer = () => (
-  <footer className="footer mt-auto py-3 bg-success text-white">
+  <footer className="footer mt-auto py-3 text-white">
     <Container>
       <Row className="align-items-start justify-content-between">
         {/* Left Column - Manoa Bites */}
