@@ -14,7 +14,7 @@ const Footer = () => (
         </Col>
 
         {/* Right Column - Links */}
-        <Col md={4} className="text-md-end">
+        <Col md={4} className="text-md-start">
           <h3>Links:</h3>
           <ul className="list-unstyled">
             <li><a href="foo" className="text-white">FAQ</a></li>
@@ -32,14 +32,10 @@ const Footer = () => (
       <Container className="my-4">
         <hr className="mb-4" style={{ borderColor: 'white' }} />
         <Row className="justify-content-center align-items-center text-center">
-          <Col xs="auto">
-            <span className="me-3">Register for free</span>
-          </Col>
-          <Col xs="auto">
-            <Button variant="light" className="rounded-pill" href="/signup">
-              Sign up!
-            </Button>
-          </Col>
+          <span className="me-3">Register for free</span>
+          <Button variant="dark" className="rounded-pill" href="/signup">
+            Sign up!
+          </Button>
         </Row>
         <hr className="mt-4" style={{ borderColor: 'white' }} />
       </Container>
