@@ -16,12 +16,12 @@ const NavBar: React.FC = () => {
   const pathName = usePathname();
 
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar className="navbar-green" expand="lg">
       <Container>
         {/* Navbar Brand with Logo and Heading */}
         <Navbar.Brand href="/" className="d-flex align-items-center">
           {/* Logo Image */}
-          <Image src="/manoabiteslogo.jpg" alt="Manoa Bites" style={{ height: '40px' }} />
+          <Image src="/FullLogo.jpg" alt="Manoa Bites" style={{ height: '60px', borderRadius: '50%' }} />
           {/* Heading Text */}
           <span style={{ fontSize: '24px', marginLeft: '10px' }}>Manoa Bites</span>
         </Navbar.Brand>
