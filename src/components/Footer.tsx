@@ -5,7 +5,7 @@ const Footer = () => (
     <Container>
       <Row className="align-items-start justify-content-between">
         {/* Left Column - Manoa Bites */}
-        <Col md={6}>
+        <Col md={4}>
           <h3>MANOA BITES:</h3>
           <p>
             This application is designed to help students and staff at the University of Hawaii at Manoa
