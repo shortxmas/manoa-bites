@@ -41,13 +41,13 @@ const IssueForm: React.FC = () => {
       <Row className="justify-content-center">
         <Col xs={5}>
           <Col className="text-center">
-            <h2>Add Stuff</h2>
+            <h2>Report A Problem</h2>
           </Col>
           <Card>
             <Card.Body>
               <Form onSubmit={handleSubmit(onSubmit)}>
                 <Form.Group>
-                  <Form.Label>Topic</Form.Label>
+                  <Form.Label>Select Topic</Form.Label>
                   <select {...register('topic')} className={`form-control ${errors.topic ? 'is-invalid' : ''}`}>
                     <option value="bug">Bug</option>
                     <option value="feature">Feature</option>
