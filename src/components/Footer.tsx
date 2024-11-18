@@ -1,5 +1,4 @@
 import { Button, Col, Container, Row } from 'react-bootstrap';
-import './Footer.css'; // Include custom styles if needed
 
 const Footer = () => (
   <footer className="footer mt-auto py-3 bg-success text-white">
