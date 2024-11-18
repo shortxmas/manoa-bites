@@ -23,7 +23,7 @@ const NavBar: React.FC = () => {
           {/* Logo Image */}
           <Image src="/FullLogo.png" alt="Manoa Bites" style={{ height: '60px', borderRadius: '50%' }} />
           {/* Heading Text */}
-          <span style={{ fontSize: '24px', marginLeft: '10px' }}>Manoa Bites</span>
+          <span style={{ fontSize: '24px', marginLeft: '10px', color: 'white' }}>Manoa Bites</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
