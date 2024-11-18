@@ -3,6 +3,7 @@
 'use client';
 
 import { useSession } from 'next-auth/react';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { BoxArrowRight, Lock, PersonFill, PersonPlusFill } from 'react-bootstrap-icons';
@@ -20,7 +21,7 @@ const NavBar: React.FC = () => {
         {/* Navbar Brand with Logo and Heading */}
         <Navbar.Brand href="/" className="d-flex align-items-center">
           {/* Logo Image */}
-          <img src="/Manoabiteslogo2.png" alt="Manoa Bites" style={{ height: '40px' }} />
+          <Image src="/manoabiteslogo.jpg" alt="Manoa Bites" style={{ height: '40px' }} />
           {/* Heading Text */}
           <span style={{ fontSize: '24px', marginLeft: '10px' }}>Manoa Bites</span>
         </Navbar.Brand>
@@ -29,11 +30,11 @@ const NavBar: React.FC = () => {
           <Nav className="me-auto justify-content-start">
             {currentUser
               ? [
-                  <Nav.Link id="add-stuff-nav" href="/add" key="add" active={pathName === '/add'}>
-                    Add Stuff
+                  <Nav.Link id="add-stuff-nav" href="/list" key="add" active={pathName === '/add'}>
+                    Directory
                   </Nav.Link>,
-                  <Nav.Link id="list-stuff-nav" href="/list" key="list" active={pathName === '/list'}>
-                    List Stuff
+                  <Nav.Link id="list-stuff-nav" href="/map" key="list" active={pathName === '/list'}>
+                    Map
                   </Nav.Link>,
                 ]
               : ''}
