@@ -32,10 +32,14 @@ const Footer = () => (
       <Container className="my-4">
         <hr className="mb-4" style={{ borderColor: 'white' }} />
         <Row className="justify-content-center align-items-center text-center">
-          <span className="me-3">Register for free</span>
-          <Button variant="dark" className="rounded-pill" href="/signup">
-            Sign up!
-          </Button>
+          <Col xs="auto">
+            <span className="me-3">Register for free</span>
+          </Col>
+          <Col xs="auto">
+            <Button variant="dark" className="rounded-pill" href="/signup">
+              Sign up!
+            </Button>
+          </Col>
         </Row>
         <hr className="mt-4" style={{ borderColor: 'white' }} />
       </Container>
