@@ -3,9 +3,8 @@ import { Container, Image } from 'react-bootstrap';
 /** The Home page. */
 const Home = () => (
   <main>
-    <Container id="landing-page" fluid className="py-3">
-      <Image src="manoabiteslogo.jpg" fluid style={{ height: '500px' }} />
-      <h2>Welcome To Manoa Bites</h2>
+    <Container id="landing-page" fluid className=" justify-content-center py-3">
+      <Image src="FullLogo.png" fluid style={{ height: '500px' }} />
     </Container>
   </main>
 );
