@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import { Restaurant } from '@prisma/client';
 import { Card, ListGroup, Button } from 'react-bootstrap';
