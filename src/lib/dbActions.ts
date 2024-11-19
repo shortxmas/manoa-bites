@@ -112,3 +112,12 @@ export async function reportIssue(issue: { topic: string; description: string })
   });
   redirect('/list');
 }
+
+export async function addFavorite(userId: number, restaurantId: number) {
+  await prisma.favorite.create({
+    data: {
+      userId,
+      restaurantId,
+    },
+  });
+}
