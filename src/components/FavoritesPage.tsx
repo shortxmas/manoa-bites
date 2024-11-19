@@ -24,11 +24,14 @@ const FavoritesPage = async () => {
       },
     },
     include: {
-      restaurant: true, // Include restaurant details in the response.
+      restaurant: {
+        include: {
+          favoritedBy: true, // Include favoritedBy details in the response.
+        },
+      },
     },
   });
 
-  // Extract the restaurants from the fetched favorites.
   const restaurants = favorites.map((favorite) => favorite.restaurant);
 
   return (
@@ -39,7 +42,7 @@ const FavoritesPage = async () => {
             <Col>
               <h1 className="text-center">Favorite Restaurants</h1>
               <Row xs={1} md={2} lg={3} className="g-4">
-                {restaurants.map((restaurant) => (
+                {restaurants.map((restaurant) => ( // Renamed argument to avoid conflict
                   <Col key={restaurant.id}>
                     <RestaurantCard restaurant={restaurant} />
                   </Col>

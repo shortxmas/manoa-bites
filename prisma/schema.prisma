@@ -28,8 +28,9 @@ model User {
   email     String       @unique
   password  String
   role      Role         @default(USER)
+  favorites Favorites[]
   favorites Restaurant[] @relation("Favorites")
-  Favorites Favorites[]
+
 }
 
 enum Condition {
@@ -62,7 +63,6 @@ model Restaurant {
   menuLink        String?
   onlineOrderLink String?
   favoritedBy     User[]      @relation("Favorites")
-  Favorites       Favorites[]
 }
 
 enum Topic {

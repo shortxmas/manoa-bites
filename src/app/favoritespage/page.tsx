@@ -1,6 +1,5 @@
 import { getServerSession } from 'next-auth';
 import { Container } from 'react-bootstrap';
-import { prisma } from '@/lib/prisma';
 import { loggedInProtectedPage } from '@/lib/page-protection';
 import authOptions from '@/lib/authOptions';
 
@@ -14,7 +13,6 @@ const FavoritesPage = async () => {
       // eslint-disable-next-line @typescript-eslint/comma-dangle
     } | null,
   );
-  
   // console.log(stuff);
   return (
     <main>
