@@ -41,6 +41,9 @@ body {
   color: #e0e0e0; /* Optional: A lighter shade on hover */
 }
 
+.navbar-green .dropdown-menu {
+  background-color: #024332; /* Match the navbar color if desired */
+}
 
 .navbar-green .dropdown-item {
   color: white !important; /* Makes text white */
@@ -48,5 +51,5 @@ body {
 
 .navbar-green .dropdown-item:hover {
   color: #e0e0e0; /* Optional: A lighter shade on hover */
-  background-color: #004d00; /* Optional: Slightly darker green for hover effect */
+  background-color: #003900; /* Optional: Slightly darker green for hover effect */
 }
