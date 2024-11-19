@@ -6,7 +6,6 @@ const Home = () => (
     <Container id="landing-page" fluid className=" justify-content-center py-3">
       <Container className="d-flex justify-content-center align-items-center">
         <Image src="/FullLogo.png" alt="Manoa Bites" style={{ height: '500px', borderRadius: '50%' }} />
-        <span style={{ fontSize: '24px', marginLeft: '10px', color: 'black' }}>Manoa Bites</span>
       </Container>
       <Container className="d-flex justify-content-center align-items-center">
         <h2>Find your favorite food spots on campus!</h2>
